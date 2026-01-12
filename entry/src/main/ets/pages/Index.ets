@@ -16,7 +16,7 @@ import { SleepEfficiency } from './SleepEfficiency';
 @Entry
 @Component
 struct Index {
-  @State message: string = 'Sleep Cycle';
+  message: string = 'Sleep Cycle';
   bottomOptions: ArcButtonOptions = new ArcButtonOptions({})
 
   @Provide('NavPathStack') pageStack: NavPathStack = new NavPathStack()

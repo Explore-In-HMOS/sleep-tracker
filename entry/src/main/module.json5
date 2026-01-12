@@ -26,25 +26,11 @@
               "entity.system.home"
             ],
             "actions": [
-              "ohos.want.action.home"
+              "action.system.home"
             ]
           }
         ]
       }
-    ],
-    "requestPermissions":[
-      {
-        "name" : "ohos.permission.VIBRATE",
-        "reason": "$string:reason",
-        "usedScene": {
-          "abilities": [
-            "FormAbility"
-          ],
-          "when":"inuse"
-        }
-      },
-      { "name": "ohos.permission.INTERNET" },
-      { "name": "ohos.permission.GET_NETWORK_INFO" }
     ],
     "extensionAbilities": [
       {
@@ -56,14 +42,6 @@
           {
             "name": "ohos.extension.backup",
             "resource": "$profile:backup_config"
-          },
-          {
-            "name": "client_id",
-            "value" : "109377167"
-          },
-          {
-            "name": "client_secret",
-            "value": "152ad850a1db9f7211c3a24154caa5f1f74b4dcc28e02e916508bb7e41d4528f"
           }
         ],
       }

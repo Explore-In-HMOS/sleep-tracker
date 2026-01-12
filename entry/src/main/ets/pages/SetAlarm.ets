@@ -4,17 +4,17 @@ import {
   ArcButtonPosition,
   ArcButtonStatus,
   ArcButtonStyleMode,
-  ColorMetrics,
+  ColorMetrics
 } from '@kit.ArkUI';
 import { AlarmService } from '../service/AlarmService'
 
 @Component
 export struct SetAlarm {
   bottomOptions: ArcButtonOptions = new ArcButtonOptions({})
-  @State today: number = new Date().getDate()
-  @State month: number = new Date().getMonth()
-  @State year: number = new Date().getFullYear()
-  @State selectedTime: Date = new Date()
+  today: number = new Date().getDate()
+  month: number = new Date().getMonth()
+  year: number = new Date().getFullYear()
+  selectedTime: Date = new Date()
   @Consume('NavPathStack') pageStack: NavPathStack;
 
   aboutToAppear() {

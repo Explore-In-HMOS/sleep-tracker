@@ -4,7 +4,7 @@ import {
   ArcButtonPosition,
   ArcButtonStatus,
   ArcButtonStyleMode,
-  ColorMetrics,
+  ColorMetrics
 } from '@kit.ArkUI';
 
 @Component
@@ -40,7 +40,7 @@ export struct ResultDuration {
                 fontColor: '#fff',
                 enableScanEffect: false,
                 showDefaultPercentage: true,
-                enableSmoothEffect: true,
+                enableSmoothEffect: true
               })
               .privacySensitive(true)
             Progress({ value: 6.5, total: 24, type: ProgressType.Capsule }).width('75%').color(Color.Orange).margin({top: 10})
@@ -52,7 +52,7 @@ export struct ResultDuration {
                 fontColor: '#fff',
                 enableScanEffect: false,
                 showDefaultPercentage: true,
-                enableSmoothEffect: true,
+                enableSmoothEffect: true
               })
               .privacySensitive(true)
             Text('In Sleep: 6.5 hours').margin({top: 5, bottom: 30})

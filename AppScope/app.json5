@@ -1,6 +1,6 @@
 {
   "app": {
-    "bundleName": "com.hmosdemos.sleepcycle",
+    "bundleName": "com.hmosdemos.wearable.sleep_tracker",
     "vendor": "hmosdemos",
     "versionCode": 1000000,
     "versionName": "1.0.0",

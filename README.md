@@ -15,13 +15,13 @@ The goal of the app is to improve users' sleep quality, promote better wake-up e
 # Preview
 
 <div>
-  <img src="images/SleepCycle_1.png" width="24%">
-  <img src="images/SleepCycle_2.png" width="24%">
-  <img src="images/SleepCycle_3.png" width="24%">
-  <img src="images/SleepCycle_4.png" width="24%">
+  <img src="screenshots/SleepCycle_1.png" width="24%">
+  <img src="screenshots/SleepCycle_2.png" width="24%">
+  <img src="screenshots/SleepCycle_3.png" width="24%">
+  <img src="screenshots/SleepCycle_4.png" width="24%">
 </div>
 
-# Use Cases:
+# Use Cases
 
 - Vibration-Only Alarm:
 Wake up naturally with silent vibration, avoiding the stress of loud alarms.

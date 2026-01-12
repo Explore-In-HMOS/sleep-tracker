@@ -4,7 +4,7 @@ import {
   ArcButtonPosition,
   ArcButtonStatus,
   ArcButtonStyleMode,
-  ColorMetrics,
+  ColorMetrics
 } from '@kit.ArkUI';
 
 @Component

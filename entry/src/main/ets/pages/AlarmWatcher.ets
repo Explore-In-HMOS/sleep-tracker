@@ -4,7 +4,7 @@ import {
   ArcButtonPosition,
   ArcButtonStatus,
   ArcButtonStyleMode,
-  ColorMetrics,
+  ColorMetrics
 } from '@kit.ArkUI';
 import { AlarmService } from '../service/AlarmService'
 import { vibrator } from '@kit.SensorServiceKit'
@@ -13,8 +13,8 @@ import { BusinessError } from '@kit.BasicServicesKit'
 @Component
 export struct AlarmWatcher {
   bottomOptions: ArcButtonOptions = new ArcButtonOptions({})
-  @State alarmTime: string = 'Loading...'
-  @State currentTime: string = ''
+  alarmTime: string = 'Loading...'
+  currentTime: string = ''
   private intervalId: number = -1
   @Consume('NavPathStack') pageStack: NavPathStack;
 
@@ -101,33 +101,31 @@ export struct AlarmWatcher {
   }
 
   build() {
-    NavDestination(){
+    NavDestination() {
       Flex({
         justifyContent: FlexAlign.Center,
         alignItems: ItemAlign.Center
       }) {
-        Row() {
-          Column() {
-            Image($r('app.media.sleeping'))
-              .width('48%')
-              .backgroundColor('#205375')
-              .padding(5)
-              .borderRadius(100)
-              .margin({ top: 15 })
-
-            Row() {
-              Image($r('app.media.alarm_icon')).width('11%')
-              Text(`Alarm set: ${this.alarmTime}`)
-                .fontColor('#ffffff')
-                .fontSize(16)
-            }
+        Column() {
+          Image($r('app.media.sleeping'))
+            .width('48%')
             .backgroundColor('#205375')
-            .margin({ top: 10, bottom: 8 })
             .padding(5)
-            .borderRadius(90)
+            .borderRadius(100)
+            .margin({ top: 15 })
 
-            ArcButton({ options: this.bottomOptions })
+          Row() {
+            Image($r('app.media.alarm_icon')).width('11%')
+            Text(`Alarm set: ${this.alarmTime}`)
+              .fontColor('#ffffff')
+              .fontSize(16)
           }
+          .backgroundColor('#205375')
+          .margin({ top: 10, bottom: 8 })
+          .padding(5)
+          .borderRadius(90)
+
+          ArcButton({ options: this.bottomOptions })
         }
       }
       .width('100%')
